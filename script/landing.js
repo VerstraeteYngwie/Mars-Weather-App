@@ -68,7 +68,7 @@ const addErrors = function(formField, errorField, errorMessage = "This field is 
     subscribeButton.classList.remove("c-form__button--disabled");
     subscribeButton.disabled = false;
     if(errorField){
-        errorField.style.display = 'none';
+        errorField.style.visibility = 'hidden';
     }
 };
 
