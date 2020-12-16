@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--  Meta  -->
+    <meta charset="UTF-8"/>
+    <title>Mars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--  Styles  -->
+    <link rel="stylesheet" href="style/screen.css">
+
+    <!--  Scripts  -->
+    <script src="./script/app.js" defer></script>
+
+    <!--  Favicons  -->
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./favicons/mars-152-247374.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./favicons/mars-144-247374.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./favicons/mars-120-247374.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./favicons/mars-114-247374.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./favicons/mars-72-247374.png">
+    <link rel="apple-touch-icon-precomposed" href="./favicons/mmrs-57-247374.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/mars-32-247374.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/mars-16-247374.png">
+
+    <meta name="msapplication-TileColor" content="#191919" />
+    <meta name="msapplication-TileImage" content="./favicons/mars-144-247374.png">
+
+    <meta name="theme-color" content="#191919">
+</head>
+<body>
+
+  <section class="o-background">
+    <img class="o-background__image" src="images/mars.jpg"></img>
+  </section>
+
+  <div class="o-container c-slider">
+    <div class="c-content c-content--flex-column">
+  
+      <div class="c-cards c-slider__slides">
+        <div class="c-card" id="slide-1">
+            <div class="c-card-header">
+                <p class="c-card-header__item c-card__title js-mission">Latest weather at Elysium Planitia</p>
+            </div>
+
+            <div class="c-card__content">
+
+                <div class="c-subject">
+                    <h2 class="c-subject__item c-subject__title">
+                        Sol 
+                        <span data-current-sol>377</span>
+                    </h2>
+                    <p class="c-subject__item c-subject__reading" data-current-date>September 30</p>
+                </div>
+
+                <div class="c-subject">
+                    <h2 class="c-subject__item c-subject__title">Temperature</h2>
+                    <p class="c-subject__item c-subject__reading">
+                        High:
+                        <span class="js-toggle-temp" data-current-temp-high>-20</span>
+                        °<span data-temp-unit></span>
+                    </p>
+                    <p class="c-subject__item c-subject__reading">
+                        Low:
+                        <span class="js-toggle-temp" data-current-temp-low>-120</span>
+                        °<span data-temp-unit></span>
+                    </p>
+                </div>
+
+                <div class="c-subject c-subject__wind">
+                    <h2 class="c-subject__item c-subject__title">Wind</h2>
+                    <p class="c-subject__item c-subject__reading">
+                        <span class="js-toggle-windspeed" data-wind-speed>72</span>
+                        <span data-speed-unit>kph</span>
+                    </p>
+
+                    <div class="c-subject__wind-direction">
+                        <p class="c-subject__sr-only" data-wind-direction-text></p>
+              
+                        <!-- update --direction custom prop
+                            to change arrow direction -->
+                        <div class="c-subject__wind-arrow" style="--direction: 150deg;" data-wind-direction-arrow></div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+
+
+
+        <div class="c-card" id="slide-2">
+          <div class="c-card-header">
+            <p class="c-card-header__item c-card__title js-mission">Latest weather at Elysium Planitia</p>
+        </div>
+
+        <div class="c-card__content mars-current-weather">
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">
+                    Sol 
+                    <span data-current-sol>378</span>
+                </h2>
+                <p class="c-subject__item c-subject__reading" data-current-date>Oktober 01</p>
+            </div>
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">Temperature</h2>
+                <p class="c-subject__item c-subject__reading">
+                    High:
+                    <span class="js-toggle-temp" data-current-temp-high>-18</span>
+                    °<span data-temp-unit></span>
+                </p>
+                <p class="c-subject__item c-subject__reading">
+                    Low:
+                    <span class="js-toggle-temp" data-current-temp-low>-124</span>
+                    °<span data-temp-unit>kph</span>
+                </p>
+            </div>
+
+            <div class="c-subject c-subject__wind">
+                <h2 class="c-subject__item c-subject__title">Wind</h2>
+                <p class="c-subject__item c-subject__reading">
+                    <span class="js-toggle-windspeed" data-wind-speed>79</span>
+                    <span data-speed-unit></span>
+                </p>
+
+                <div class="c-subject__wind-direction">
+                    <p class="c-subject__sr-only" data-wind-direction-text></p>
+          
+                    <!-- update --direction custom prop
+                        to change arrow direction -->
+                    <div class="c-subject__wind-arrow" style="--direction: 60deg;" data-wind-direction-arrow></div>
+                </div>
+            </div> 
+          </div>
+        </div>
+
+
+
+        <div class="c-card" id="slide-3">
+          <div class="c-card-header">
+            <p class="c-card-header__item c-card__title js-mission">Latest weather at Elysium Planitia</p>
+        </div>
+
+        <div class="c-card__content mars-current-weather">
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">
+                    Sol 
+                    <span data-current-sol>379</span>
+                </h2>
+                <p class="c-subject__item c-subject__reading" data-current-date>Oktober 02</p>
+            </div>
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">Temperature</h2>
+                <p class="c-subject__item c-subject__reading">
+                    High:
+                    <span class="js-toggle-temp" data-current-temp-high>-21</span>
+                    °<span data-temp-unit></span>
+                </p>
+                <p class="c-subject__item c-subject__reading">
+                    Low:
+                    <span class="js-toggle-temp" data-current-temp-low>-117</span>
+                    °<span data-temp-unit>kph</span>
+                </p>
+            </div>
+
+            <div class="c-subject c-subject__wind">
+                <h2 class="c-subject__item c-subject__title">Wind</h2>
+                <p class="c-subject__item c-subject__reading">
+                    <span class="js-toggle-windspeed" data-wind-speed>76</span>
+                    <span data-speed-unit></span>
+                </p>
+
+                <div class="c-subject__wind-direction">
+                    <p class="c-subject__sr-only" data-wind-direction-text></p>
+          
+                    <!-- update --direction custom prop
+                        to change arrow direction -->
+                    <div class="c-subject__wind-arrow" style="--direction: 340deg;" data-wind-direction-arrow></div>
+                </div>
+            </div> 
+          </div>
+        </div>
+
+
+
+        <div class="c-card" id="slide-4">
+          <div class="c-card-header">
+            <p class="c-card-header__item c-card__title js-mission">Latest weather at Elysium Planitia</p>
+        </div>
+
+        <div class="c-card__content mars-current-weather">
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">
+                    Sol 
+                    <span data-current-sol>380</span>
+                </h2>
+                <p class="c-subject__item c-subject__reading" data-current-date>Oktober 03</p>
+            </div>
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">Temperature</h2>
+                <p class="c-subject__item c-subject__reading">
+                    High:
+                    <span class="js-toggle-temp" data-current-temp-high>-15</span>
+                    °<span data-temp-unit></span>
+                </p>
+                <p class="c-subject__item c-subject__reading">
+                    Low:
+                    <span class="js-toggle-temp" data-current-temp-low>-114</span>
+                    °<span data-temp-unit></span>
+                </p>
+            </div>
+
+            <div class="c-subject c-subject__wind">
+                <h2 class="c-subject__item c-subject__title">Wind</h2>
+                <p class="c-subject__item c-subject__reading">
+                    <span class="js-toggle-windspeed" data-wind-speed>69</span>
+                    <span data-speed-unit>kph</span>
+                </p>
+
+                <div class="c-subject__wind-direction">
+                    <p class="c-subject__sr-only" data-wind-direction-text></p>
+          
+                    <!-- update --direction custom prop
+                        to change arrow direction -->
+                    <div class="c-subject__wind-arrow" style="--direction: 290deg;" data-wind-direction-arrow></div>
+                </div>
+            </div> 
+          </div>
+        </div>
+
+
+
+        <div class="c-card" id="slide-5">
+          <div class="c-card-header">
+            <p class="c-card-header__item c-card__title js-mission">Latest weather at Elysium Planitia</p>
+        </div>
+
+        <div class="c-card__content mars-current-weather">
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">
+                    Sol 
+                    <span data-current-sol>381</span>
+                </h2>
+                <p class="c-subject__item c-subject__reading" data-current-date>Oktober 04</p>
+            </div>
+
+            <div class="c-subject">
+                <h2 class="c-subject__item c-subject__title">Temperature</h2>
+                <p class="c-subject__item c-subject__reading">
+                    High:
+                    <span class="js-toggle-temp" data-current-temp-high>-26</span>
+                    °<span data-temp-unit></span>
+                </p>
+                <p class="c-subject__item c-subject__reading">
+                    Low:
+                    <span class="js-toggle-temp" data-current-temp-low>-129</span>
+                    °<span data-temp-unit></span>
+                </p>
+            </div>
+
+            <div class="c-subject c-subject__wind">
+                <h2 class="c-subject__item c-subject__title">Wind</h2>
+                <p class="c-subject__item c-subject__reading">
+                    <span class="js-toggle-windspeed" data-wind-speed>83</span>
+                    <span data-speed-unit>kph</span>
+                </p>
+
+                <div class="c-subject__wind-direction">
+                    <p class="c-subject__sr-only" data-wind-direction-text></p>
+          
+                    <!-- update --direction custom prop
+                        to change arrow direction -->
+                    <div class="c-subject__wind-arrow" style="--direction: 205deg;" data-wind-direction-arrow></div>
+                </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+
+      <div class="c-navigations">
+        <div>
+          <a class="c-pages" href="#slide-1">1</a>
+          <a class="c-pages" href="#slide-2">2</a>
+          <a class="c-pages" href="#slide-3">3</a>
+          <a class="c-pages" href="#slide-4">4</a>
+          <a class="c-pages" href="#slide-5">5</a>
+        </div>
+
+        <div class="c-button">
+          <label for="cel">°C</label>
+          <input type="radio" id="cel" name="unit" checked>
+          <!-- when unit__toggle is clicked
+                checkbox needs to change -->
+          <button class="c-button__toggle" data-unit-toggle></button>
+          <label for="fah">°F</label>
+          <input type="radio" id="fah" name="unit">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
